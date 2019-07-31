@@ -1,0 +1,99 @@
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+
+<script>
+
+ $(document).ready(function() {
+
+    $('.faq_question').click(function() {
+
+        if ($(this).parent().is('.open')){
+            $(this).closest('.faq').find('.faq_answer_container').animate({'height':'0'},500);
+            $(this).closest('.faq').removeClass('open');
+
+            }else{
+                var newHeight =$(this).closest('.faq').find('.faq_answer').height() +'px';
+                $(this).closest('.faq').find('.faq_answer_container').animate({'height':newHeight},500);
+                $(this).closest('.faq').addClass('open');
+            }
+
+    });
+
+});
+
+</script>
+<style>
+/*FAQS*/
+.faq_question {
+    margin: 0px;
+    padding: 0px 0px 5px 0px;
+    display: inline-block;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.faq_answer_container {
+    height: 0px;
+    overflow: hidden;
+    padding: 0px;
+}
+
+</style>
+
+<div class="faq_container">
+    <div class="faq">
+        <div class="faq_question">Overview</div>
+        <div class="faq_answer_container">
+            <div class="faq_answer">
+                <ul>
+                    <li><b>Home</b> Home page that shows corpus-related details like category-count</li>
+                    <li><b>Browse</b> Home page that shows corpus-related details like category-count</li>
+                    <li><b>Advanced Search</b> Home page that shows corpus-related details like category-count</li>
+                    <li><b>Help</b>
+                        <ul>
+                            <li><b>Overview</b></li>
+                            <li><b>FAQs</b></li>
+                            <li><b>API Reference</b></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="faq">
+        <div class="faq_question">What is displayed when I click "Home?"</div>
+        <div class="faq_answer_container">
+            <div class="faq_answer">The home page displays various details about the corpus.  For instance, statistics on the categories to browse through along with items like minimum, average, and maximum count of projects in the corpus.</div>
+        </div>
+    </div>
+    <div class="faq">
+        <div class="faq_question">What is displayed when I click "Home?"</div>
+        <div class="faq_answer_container">
+            <div class="faq_answer">The home page displays various details about the corpus.  For instance, statistics on the categories to browse through along with items like minimum, average, and maximum count of projects in the corpus.</div>
+        </div>
+    </div>
+    <div class="faq">
+        <div class="faq_question">What is displayed when I click "Browse?"</div>
+        <div class="faq_answer_container">
+            <div class="faq_answer">Browse allows you to navigate starting with available categories:
+                <ul class="faq_answer">
+                    <li>Clicking a category displays a list of that category (e.g., list of languages)</li>
+                    <li>Clicking a specific category item displays a list of projects (e.g., list of java projects)</li>
+                    <li>Clicking a specific project metadata link displays the stored metadata (project count, crawled date, etc.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="faq">
+        <div class="faq_question">What is displayed when I click "Advanced Search?"</div>
+            <div class="faq_answer_container">
+                <div class="faq_answer">Advanced search is not yet implemented.</div>
+            </div>
+        </div>
+    </div>
+    <div class="faq">
+        <div class="faq_question">What kind of help is available?</div>
+        <div class="faq_answer_container">
+            <div class="faq_answer">Help is available for an overview, this FAQ, and restful API for muse corpus bowsing </div>
+        </div>
+    </div>
+</div>

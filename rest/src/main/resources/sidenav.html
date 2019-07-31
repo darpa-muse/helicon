@@ -1,0 +1,46 @@
+<div id="sideNav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="faq_container">
+        <div class="faq">
+            <div class="faq_question">Overview</div>
+            <div class="faq_answer_container">
+                <div class="faq_answer">
+                    <ul>
+                        <li><b>Home</b> shows corpus-related details like category-count</li>
+                        <li><b>Browse</b>
+                            <ul>
+                                <li>Clicking a category displays a list of that category (e.g., list of languages)</li>
+                                <li>Clicking a specific category item displays a list of projects (e.g., list of java projects)</li>
+                                <li>Clicking a specific project metadata link displays the stored metadata (project count, crawled date, etc.</li>
+                            </ul>
+                        </li>
+                        <li><b>Advanced Search</b><i> Not yet implemented.</i></li>
+                        <li><b>Help</b>
+                            <ul>
+                                <li><b>This Overview</b></li>
+                                <li><b>FAQs</b> A growing list of answers to common questions.</li>
+                                <li><b>API Reference</b> A list of RESTful API calls that interact with the corpus back-end.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="faq">
+            <div class="faq_question">FAQs</div>
+            <div class="faq_answer_container">
+                <div class="faq">
+                    <div class="faq_question">
+                        <a href ="#a1" onclick="fillAnswer('a1Text'); return false;">What help is available?</a>
+                        <div id = "a1Text"></div>
+                        <a href ="#a2" onclick="fillAnswer('a2Text'); return false;">What is displayed in "Home?"</a>
+                        <div id = "a2Text"></div>
+                        <a href ="#a3" onclick="fillAnswer('a3Text'); return false;">What does "Browse" do?</a>
+                        <div id = "a3Text"></div>
+                        <a href ="#a4" onclick="fillAnswer('a4Text'); return false;">What is "Advanced Search"</a>
+                        <div id = "a4Text"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

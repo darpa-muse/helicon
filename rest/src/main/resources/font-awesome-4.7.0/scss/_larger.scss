@@ -1,0 +1,13 @@
+// Icon Sizes
+// -------------------------
+
+/* makes the font 33% larger relative to the icon container */
+.#{$fa-css-prefix}-lg {
+  font-count: (4em / 3);
+  line-height: (3em / 4);
+  vertical-align: -15%;
+}
+.#{$fa-css-prefix}-2x { font-count: 2em; }
+.#{$fa-css-prefix}-3x { font-count: 3em; }
+.#{$fa-css-prefix}-4x { font-count: 4em; }
+.#{$fa-css-prefix}-5x { font-count: 5em; }

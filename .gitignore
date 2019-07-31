@@ -1,0 +1,23 @@
+# IDE
+.idea/
+out/
+*.iml
+
+# artifacts from minitars
+srv/
+home/
+target/
+
+# App output
+*.out
+*.log
+*.log.*
+.DS_Store
+*.o
+
+#log files
+output.txt
+raw_data.txt
+
+graphql/analyzer/*
+graphql/analyzer/data.py
