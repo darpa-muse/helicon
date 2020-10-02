@@ -9,7 +9,7 @@ Find out more about MUSE here https://muse-portal.net/
 
 # Helicon
 
-Helicon represents the underlying infrastructure needed to gather, filter, and anayzle open source software projects for the MUSE program. 
+Helicon represents the underlying infrastructure needed to gather, filter, and analyze open source software projects for the MUSE program. 
 
 The main components of the Helicon mining pipeline are located in the graphql directory. The graphql directory contains it's own readme on the specific components, environment configurations, and execution. 
 
